@@ -7,3 +7,7 @@ dataset.py为数据集构建程序
 main.py为网络训练用程序，验证过程也包含在其中
 test.py为网络测试用程序
 final_test.py为比赛现场测试脚本，从给定的nii文件直接生成结果nii文件
+
+
+
+The u-net uses the first 4 layers of ResNet50 for the downsampling part and replace the transposed convolution with Pixel Shuffle in the upsampling part.
